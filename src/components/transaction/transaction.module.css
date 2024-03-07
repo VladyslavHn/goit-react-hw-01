@@ -1,0 +1,33 @@
+.container {
+  width: 100%;
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.title {
+  color: white;
+  background-color: #353535;
+}
+
+.item {
+  text-align: center;
+}
+
+tbody:nth-child(odd) .item {
+  background-color: white;
+}
+
+tbody:nth-child(even) .item {
+  background-color: rgb(184, 182, 182);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: 2px solid black;
+  padding: 8px;
+}

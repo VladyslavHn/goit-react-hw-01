@@ -1,6 +1,6 @@
 import Profile from './components/profile/profile'
-import './App.css'
 import Friends from './components/friends/friend'
+import TransactionHistory from './components/transaction/transaction'
 
 function App() {
 
@@ -10,6 +10,8 @@ function App() {
       <Profile />
       <h2>My Friends</h2>
       <Friends />
+      <h2>My transactions</h2>
+      < TransactionHistory />
     </div>
   )
 }

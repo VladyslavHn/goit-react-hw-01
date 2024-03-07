@@ -1,29 +1,30 @@
-import {name, tag, location, avatar, stats} from './userData.json'
+import { name, tag, location, avatar, stats } from './userData.json'
+import css from './profile.module.css'
 
 
 
 function Profile() {
 
   return (
-    <div>
-        <div>
-            <img src={avatar} alt="User avatar"/>
-            <p>{name}</p>
-            <p>{tag}</p>
-            <p>{location}</p>
+    <div className={css.container}>
+        <div className={css.main}>
+            <img className={css.img} src={avatar} alt="User avatar"/>
+            <p className={css.name}>{name}</p>
+            <p className={css.tag}>@{tag}</p>
+            <p className={css.location}>{location}</p>
         </div>
-        <ul>
-            <li>
-                <span>Followers</span>
-                <span>{ stats.followers }</span>
+        <ul className={css.list}>
+            <li className={css.followers}>
+                <span className={css.follow}>Followers</span>
+                <span className={css.stats}>{ stats.followers }</span>
             </li>
-            <li>
-                <span>Views</span>
-                <span>{stats.views }</span>
+            <li className={css.views}>
+                <span   className={css.view}>Views</span>
+                <span className={css.stats}>{stats.views }</span>
             </li>
-            <li>
-                <span>Likes</span>
-                <span>{stats.likes }</span>
+            <li className={css.likes}>
+                <span className={css.like}>Likes</span>
+                <span className={css.stats}>{stats.likes }</span>
             </li>
         </ul>
     </div>

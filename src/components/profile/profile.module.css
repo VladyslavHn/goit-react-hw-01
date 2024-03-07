@@ -1,0 +1,111 @@
+.container {
+  margin-top: 20px;
+  width: 500px;
+  border: 2px solid black;
+  padding: 20px, 0, 0, 0;
+  border-radius: 2%;
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+
+.main {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+  background-color: #0000009c;
+}
+
+.list {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  padding: 0;
+  padding-top: 20px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.followers {
+  width: 100%;
+  padding: 20px;
+  border: 2px solid rgba(0, 0, 0, 0.212);
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: #3b313153;
+}
+
+.views {
+  width: 100%;
+  padding: 20px;
+  border: 2px solid rgba(0, 0, 0, 0.212);
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: #3b313153;
+}
+
+.likes {
+  width: 100%;
+  padding: 20px;
+  border: 2px solid rgba(0, 0, 0, 0.212);
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: #3b313153;
+}
+
+.name {
+  justify-content: center;
+  align-self: center;
+  font-weight: bold;
+  font-size: 50px;
+  margin: 20px 0;
+}
+
+.tag {
+  justify-content: center;
+  align-self: center;
+  font-size: 30px;
+  margin: 0 auto;
+  color: lightslategray;
+}
+
+.location {
+  justify-content: center;
+  align-self: center;
+  font-size: 30px;
+  margin: 0 auto;
+  margin-top: 15px;
+  color: lightslategray;
+}
+
+.stats {
+  font-weight: bold;
+  margin-top: 10px;
+  justify-content: center;
+  align-self: center;
+}
+
+.follow {
+  justify-content: center;
+  align-self: center;
+}
+
+.view {
+  justify-content: center;
+  align-self: center;
+}
+.like {
+  justify-content: center;
+  align-self: center;
+}
