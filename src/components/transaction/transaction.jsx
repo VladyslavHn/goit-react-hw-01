@@ -1,7 +1,7 @@
-import userTransactions from "./transaction.json"
+
 import css from './transaction.module.css'
 
-function TransactionHistory() {
+function TransactionHistory({items}) {
     return (
       <table className={css.container}>
   <thead>
@@ -11,13 +11,13 @@ function TransactionHistory() {
       <th className={css.title}>Currency</th>
     </tr>
   </thead>
-            {userTransactions.transactions.map(({ id, type, amount, currency }) => {
+            {items.map((item) => {
                 return(
-                <tbody key={id}>
+                <tbody key={item.id}>
                     <tr>
-                        <td className={css.item}>{type }</td>
-                        <td className={css.item}>{amount }</td>
-                        <td className={css.item}>{currency }</td>
+                        <td className={css.item}>{item.type }</td>
+                        <td className={css.item}>{item.amount }</td>
+                        <td className={css.item}>{item.currency }</td>
                     </tr>
                 </tbody>
             )}

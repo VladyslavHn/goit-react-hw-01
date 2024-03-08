@@ -1,14 +1,13 @@
-import { name, tag, location, avatar, stats } from './userData.json'
 import css from './profile.module.css'
 
 
 
-function Profile() {
+function Profile({name, tag, location, image, stats}) {
 
   return (
     <div className={css.container}>
         <div className={css.main}>
-            <img className={css.img} src={avatar} alt="User avatar"/>
+            <img className={css.img} src={image} alt="User avatar"/>
             <p className={css.name}>{name}</p>
             <p className={css.tag}>@{tag}</p>
             <p className={css.location}>{location}</p>

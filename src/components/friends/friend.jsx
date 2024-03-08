@@ -1,19 +1,19 @@
-import friendsData from './friendsList.json'
+
 import css from './friends.module.css'
 import clsx from 'clsx';
 
-function Friends() {
+function Friends({ friends }) {
     return (
         <div className={css.container}>
-        {friendsData.friends.map(({ id, avatar, name, isOnline }) => {
+        {friends.map((friend) => {
             return (
-                <div className={css.card} key={id}>
-                    <img className={css.img} src={avatar} alt="Avatar" width="48" />
-                    <p className={css.name} >{name }</p>
+                <div className={css.card} key={friend.id}>
+                    <img className={css.img} src={friend.avatar} alt="Avatar" width="48" />
+                    <p className={css.name} >{friend.name }</p>
                     <p className={clsx(css.status, {
-                        [css.online]: isOnline,
-                        [css.offline]: !isOnline
-                    })}>{isOnline? 'Online':'Offline' }</p>
+                        [css.online]: friend.isOnline,
+                        [css.offline]: !friend.isOnline
+                    })}>{friend.isOnline? 'Online':'Offline' }</p>
             </div>)
         })}
         </div>
