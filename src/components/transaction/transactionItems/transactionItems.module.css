@@ -1,0 +1,16 @@
+.item {
+  text-align: center;
+}
+
+tbody:nth-child(odd) .item {
+  background-color: white;
+}
+
+tbody:nth-child(even) .item {
+  background-color: rgb(184, 182, 182);
+}
+
+td {
+  border: 2px solid black;
+  padding: 8px;
+}
