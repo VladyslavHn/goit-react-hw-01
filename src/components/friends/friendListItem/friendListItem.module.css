@@ -1,0 +1,38 @@
+.card {
+  border: 2px solid black;
+  padding: 20px;
+  border-radius: 8%;
+  width: 120px;
+}
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+}
+.name {
+  display: flex;
+  font-size: 30px;
+  margin: 0 auto;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.status {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.online {
+  color: green;
+}
+
+.offline {
+  color: red;
+}
